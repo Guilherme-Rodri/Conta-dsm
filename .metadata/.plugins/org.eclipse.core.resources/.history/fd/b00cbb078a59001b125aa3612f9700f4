@@ -1,0 +1,24 @@
+package br.senai.sp.jandira;
+
+import br.senai.sp.jandira.model.Conta;
+
+public class App {
+
+	public static void main(String[] args) {
+
+	  Conta ContaDaAna =new Conta ();
+	  Conta ContaDoJoao =new Conta ();
+	  
+	  ContaDaAna.titular = "Ana Gomes";
+	  ContaDaAna.numero = "111-98";
+	  ContaDaAna.tipo = "Corrente";
+	  ContaDaAna.ativa = true;
+	  ContaDaAna.limite;
+	  ContaDaAna.depositar(100);
+	  ContaDaAna.mostrarSaldoDaConta();
+	  ContaDaAna.depositar(30);
+	  ContaDaAna.mostrarSaldoDaConta();
+	  ContaDaAna.sacar(50);
+	  ContaDaAna.mostrarSaldoDaConta( );
+	}
+}

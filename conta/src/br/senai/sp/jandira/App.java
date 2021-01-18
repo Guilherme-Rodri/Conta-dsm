@@ -6,55 +6,37 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Conta contaDaMaria = new Conta();
-		Conta contaDoJoao = new Conta();
-
-		// Determinar os dados da conta da Maria
-		contaDaMaria.numero = "100-85";
-		contaDaMaria.titular = "Maria da Silva";
-		contaDaMaria.tipo = "Corrente";
-		contaDaMaria.ativa = true;
-		contaDaMaria.depositar(100);
-
-		// Determinar os dados da conta do João
-
-		contaDoJoao.numero = "200-96";
-		contaDoJoao.titular = "João Almeida";
-		contaDoJoao.tipo = "Poupança";
-		contaDoJoao.ativa = true;
-		contaDoJoao.depositar(200);
-
-		// Ver os saldos das contas com o nome
-		System.out.println("Titular: " + contaDaMaria.titular);
-		contaDaMaria.mostrarSaldoDaConta();
-		System.out.println("--------------------------------");
-		System.out.println("Titular: " + contaDoJoao.titular);
-		contaDoJoao.mostrarSaldoDaConta();
-		System.out.println("--------------------------------");
-
-		// Colocar 100 reais na conta da Maria
-
-		contaDaMaria.depositar(58);
-
-		// Ver os saldos das contas com o nome
-		System.out.println("Titular: " + contaDaMaria.titular);
-		contaDaMaria.mostrarSaldoDaConta();
-		System.out.println("--------------------------------");
-		System.out.println("Titular: " + contaDoJoao.titular);
-		contaDoJoao.mostrarSaldoDaConta();
-		System.out.println("--------------------------------");
-
-		// Colocar 100 reais na conta da Maria
-
-		contaDaMaria.depositar(-20);
-
-		// Ver os saldos das contas com o nome
-		System.out.println("Titular: " + contaDaMaria.titular);
-		contaDaMaria.mostrarSaldoDaConta();
-		System.out.println("--------------------------------");
-		System.out.println("Titular: " + contaDoJoao.titular);
-		contaDoJoao.mostrarSaldoDaConta();
-		System.out.println("--------------------------------");
-
+	  Conta ContaDaAna =new Conta ();
+	  Conta ContaDoJoao =new Conta ();
+	  
+	  ContaDaAna.titular = "Ana Gomes";
+	  ContaDaAna.numero = "111-98";
+	  ContaDaAna.tipo = "Corrente";
+	  ContaDaAna.ativa = true;
+	  ContaDaAna.limite = 200;
+	  ContaDaAna.depositar(100);
+	  ContaDaAna.mostrarSaldoDaConta();
+	  ContaDaAna.depositar(30);
+	  ContaDaAna.mostrarSaldoDaConta();
+	  ContaDaAna.sacar(50);
+	  ContaDaAna.mostrarSaldoDaConta( );
+	  ContaDaAna.sacar(500);
+	  ContaDaAna.mostrarSaldoDaConta( );
+	  ContaDaAna.sacar(50);
+	  ContaDaAna.mostrarSaldoDaConta( );
+	  ContaDaAna.sacar(80);
+	  ContaDaAna.mostrarSaldoDaConta( );
+	  ContaDaAna.depositar(100);
+	  ContaDaAna.mostrarSaldoDaConta();
+	  ContaDaAna.getSaldo();
+	  
+	  int a = somar(10, 5);
+	  
 	}
+	
+	public static int somar( int valor1, int valor2) {
+		int resultado = valor1 + valor2;
+		return resultado;
+	}
+	
 }
